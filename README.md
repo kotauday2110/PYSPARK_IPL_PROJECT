@@ -81,19 +81,6 @@ Each dataset is read into a Spark DataFrame using an explicitly defined schema t
 
 ---
 
-## 🛠️ How to Run the Project
-
-1. Upload all 5 CSV datasets to your Databricks file system or local Spark environment.
-2. Open the notebook `IPL_DATA_ANALYSIS_SPARK.ipynb`.
-3. Update the file paths if needed, for example:
-
-   ```python
-   spark.read.option("header", True).schema(ball_by_ball_schema).csv("/dbfs/FileStore/ball_by_ball.csv")
-   ```
-4. Run all cells to perform the analysis.
-
----
-
 ## Folder Structure
 
 ```
